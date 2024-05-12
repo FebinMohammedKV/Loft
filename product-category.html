@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="loft-furniture.css">
+</head>
+<body>
+    <a href=""><div class="chat">
+        <i class="fa-solid fa-message fa-xl mess" style="color: #fbfafa;"></i>
+        <p>Chat</p>
+    </div>
+    </a>
+    <nav class="navigation">
+        <div class="main">
+            <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="menu-btn">&#9776; </span> -->
+            <i class="fa-solid fa-bars fa-xl menu-btn"></i>
+            <div class="left">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                </button>
+                <input type="text" name="search" class="Search" placeholder="Search">
+            </div>
+            <div class="logo">
+                <img src="./Images/LOFT_Logo.avif" alt="loft logo">
+            </div>
+
+            <div class="right">
+                <ul>
+                    <li class="wishlist"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.6 7.6 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
+                        </svg></a>
+                        <div class="sub">
+                            <p class="text">You need to be logged in to see your whislist</p>
+                            <button>LOG IN</button>
+                            <p class="under"><a href="">Or create an account</a></p>
+                        </div>
+                    </li>
+                    <li class="account"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                        </svg></a>
+                        <div class="sub">
+                            <button>LOG IN</button>
+                            <p class="under"><a href="">Or create an account</a></p>
+                            <p class="text">We're here to help <nobr>0161 872 2363</nobr></p>
+                            <p class="under"><a href="">customerservice@loft.co.uk</a></p>
+                        </div>
+                    </li>
+                    <li class="store"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                        </svg></a>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+
+        <div id="myNav" class="menu">
+            <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" class="menu-btn">&times;</a> -->
+            <ul class="nav-links">
+            <li><a href="#" >SECTORS</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                </svg>
+                <i class="fa-solid fa-plus plus"></i>
+                <ul class="submenu">
+                    <li>Bulid To Rent</li>
+                    <li>Student Accommodation</li>
+                    <li>HMO</li>
+                    <li>Co-Living</li>
+                    <li>Priate Rented Sector</li>
+                    <li>Single Family Housing</li>
+                    <li>Residential</li> 
+                </ul>
+            </li>
+            <li><a href="#">SERVICES</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                </svg>
+                <i class="fa-solid fa-plus plus"></i>
+                <ul class="submenu">
+                    <li>Interior Design</li>
+                    <li>Property Staging</li>
+                    <li>Property Refurbishment</li>
+                    <li>Delivery & Installation</li>
+                    <li>Removals & Recycling</li>
+                    <li>Virtual Staging</li>
+                    <li>FF&E</li>
+                </ul>
+            </li>
+            <li><a href="#">PORTFOLIO</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                </svg>
+                <i class="fa-solid fa-plus plus"></i>
+                <ul class="submenu">
+                    <li>Case Studies</li>
+                    <li>Brochures</li>
+                </ul>
+            </li>
+            <li><a href="#">SHOP BY ROOM</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                </svg>
+                <i class="fa-solid fa-plus plus"></i>
+                <ul class="submenu">
+                    <li>All Furniture Packages</li>
+                    <li>Living Room</li>
+                    <li>Dining Room</li>
+                    <li>Bedroom</li>
+                    <li>Home Office</li>
+                    <li>Accessories</li>
+                </ul>
+            </li>
+            <li><a href="#">SHOP BY SECTOR</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                </svg>
+                <i class="fa-solid fa-plus plus"></i>
+                <ul class="submenu">
+                    <li>Student & Contract Furniture</li>
+                    <li>Residential & BTR</li>
+                    <li>Landlord & Agency</li>
+                    <li>Show Home & Property Staging</li>
+                    <li>Serviced Apartments</li>
+                    <li>LOFT Warehouse Outlet</li>
+                </ul>
+            </li>
+            <li><a href="#">LEFT OUTLET</a></li>
+            <li><a href="index.html" style="color: #c34830;">SALE</a></li>
+            <li><a href="#">ABOUT US</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                </svg>
+                <i class="fa-solid fa-plus plus"></i>
+                <ul class="submenu">
+                    <li>Latest News</li>
+                    <li>Meet the Team</li>
+                    <li>Sustainability</li>
+                    <li>Careers</li>
+                    <li>Virtual Showroom</li>
+                    <li>Contact Us</li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="top">
+            <div class="cont portfolio" style="padding-left: 10px;">
+                <img src="Images/Portfolio.webp" alt="portfolio icon">
+                <a href="#" class="pro">View our <br> <span>Portfolio</span></a>
+       
+            </div>
+            <div class="cont protect">
+                <img src="Images/protect.webp" alt="Protect icon">
+                <a href="#" class="pro"><span>Protect</span> the rainforest with every <br>purchase</p></a>
+
+            </div>
+            <div class="cont iandr">
+                <img src="Images/i and r.webp" alt="Installation and remaval icon">
+                <a href="#" class="pro"><span>Installation and Removals</span> <br>Available</a>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="furniture">
+        <div class="head">
+            FURNITURE PACKAGES
+        </div>
+        <div class="category">
+            <div>
+                <img src="Images/cat1.webp" alt="">
+                <p>
+                    COMPLETE PROPERTY PACKAGES</p>
+            </div>
+            <div>
+                <img src="Images/cat2.webp" alt="">
+                <p>LIVING ROOM FURNITURE PACKAGES
+                </p>
+            </div>
+            <div>
+                <img src="Images/cat3.webp" alt="">
+                <p>BEDROOM FURNITURE PACKAGES</p>
+            </div>
+            <div>
+                <img src="Images/cat4.webp" alt="">
+                <p>DINING TABLE & CHAIR SETS</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="information">
+        <div>Our from-stock, professionally installed, design-led furniture packages offer the ideal solution for any property professional looking to attract residents to their property.</div>
+        <div>Furniture Packages are the easiest way to fully furnish a property with a cohesive look. Created by LOFT's in-house designers, our from stock furniture packages suit a wide range of styles and prices and can be delivered quickly to properties nationwide.  </div>
+        <div>Delivered and installed by our experienced team, these furniture packs will instantly elevate your property.  What's more, we can remove and responsibly dispose of your old furniture at the same time.</div>
+    </section>
+
+    <section class="sorting">
+        <div>
+            <img src="Images/filter.png" alt="">
+            <span>Filter</span>
+        </div>
+        <div>
+            <span>53 &nbsp; Products</span>
+        </div>
+        <div>
+            <span>Sort By</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </section>
+
+    
+
+    <section class="grid">
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item1.webp" alt="" class="f-image">
+                    <img src="Images/item11.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Manhattan Furniture Package</div>
+                <p>From £2,128.50 exc VAT &nbsp;<span> £2,365.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item2.webp" alt="" class="f-image">
+                    <img src="Images/item22.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Copenhagen Furniture Package</div>
+                <p>From £2,290.50 exc VAT &nbsp;<span> £2,545.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item3.webp" alt="" class="f-image">
+                    <img src="Images/item33.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Verona Furniture Package</div>
+                <p>From £2,331.00 exc VAT &nbsp;<span> £2,590.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item4.webp" alt="" class="f-image">
+                    <img src="Images/item44.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Modern Comfort Furniture Package</div>
+                <p>From £2,488.50 exc VAT &nbsp;<span> £2,765.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item5.webp" alt="" class="f-image">
+                    <img src="Images/item55.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Dark Naturals Furniture Package</div>
+                <p>From £2,592.00 exc VAT &nbsp;<span> £2,880.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item6.webp" alt="" class="f-image">
+                    <img src="Images/item66.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Airy Tranquillity Furniture Package</div>
+                <p>From £2,038.50 exc VAT &nbsp;<span> £2,265.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item7.webp" alt="" class="f-image">
+                    <img src="Images/item7.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Copper Modernist Furniture Package</div>
+                <p>From £2,218.50 exc VAT &nbsp;<span> £2,465.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item8.webp" alt="" class="f-image">
+                    <img src="Images/item8.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Sophisticated Light Bedroom Package</div>
+                <p>From £1,008.00 exc VAT &nbsp;<span> £1,120.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item9.webp" alt="" class="f-image">
+                    <img src="Images/item9.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Modern Japandi Bedroom Package</div>
+                <p>From £1,908.00 exc VAT &nbsp;<span> £2,120.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item10.webp" alt="" class="f-image">
+                    <img src="Images/item10.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Natural Elegance Bedroom Package</div>
+                <p>From £868.50 exc VAT &nbsp;<span> £965.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item111.webp" alt="" class="f-image">
+                    <img src="Images/item111.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Mid Century Modern Sleek Bedroom Package</div>
+                <p>From £756.00 exc VAT &nbsp;<span> £840.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item12.webp" alt="" class="f-image">
+                    <img src="Images/item12.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Serene Simplicity Bedroom Package</div>
+                <p>From £936.00 exc VAT &nbsp;<span> £1,040.00
+
+                </span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item13.webp" alt="" class="f-image">
+                    <img src="Images/item13.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Luxury Style Bedroom Package</div>
+                <p>From £841.50 exc VAT &nbsp;<span> £935.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item14.webp" alt="" class="f-image">
+                    <img src="Images/item14.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Urban Living Room Pack</div>
+                <p>From £688.50 exc VAT &nbsp;<span> £765.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item15.webp" alt="" class="f-image">
+                    <img src="Images/item15.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Relax Serenity Living Room Pack</div>
+                <p>From £918.00 exc VAT &nbsp;<span> £1,020.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item16.webp" alt="" class="f-image">
+                    <img src="Images/item16.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Earthy Tones Living Room Pack</div>
+                <p>From £954.00 exc VAT &nbsp;<span> £1,060.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item17.webp" alt="" class="f-image">
+                    <img src="Images/item17.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">LOFT Living Room Pack</div>
+                <p>From £1,125.00 exc VAT &nbsp;<span> £1,250.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item18.webp" alt="" class="f-image">
+                    <img src="Images/item18.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Silvio And Lyria Dining Set</div>
+                <p>From £409.50 exc VAT &nbsp;<span> £455.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item19.webp" alt="" class="f-image">
+                    <img src="Images/item19.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Alanna And Zendaya Dining Set</div>
+                <p>From £576.00 exc VAT &nbsp;<span> £640.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item20.webp" alt="" class="f-image">
+                    <img src="Images/item20.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Carmen And Lyria Dining Set</div>
+                <p>From £369.00 exc VAT &nbsp;<span> £410.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item21.webp" alt="" class="f-image">
+                    <img src="Images/item21.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Cobra And Lyria Dining Set</div>
+                <p>From £445.50 exc VAT &nbsp;<span> £495.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item222.webp" alt="" class="f-image">
+                    <img src="Images/item222.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Perth & Tulip Dining Set</div>
+                <p>From £310.50 exc VAT &nbsp;<span> £355.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item23.webp" alt="" class="f-image">
+                    <img src="Images/item23.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Silvio & Ruby Dining Set</div>
+                <p>From £220.50 exc VAT &nbsp;<span> £245.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item24.webp" alt="" class="f-image">
+                    <img src="Images/item24.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Silvio And Zendaya Dining Set</div>
+                <p>From £454.50 exc VAT &nbsp;<span> £505.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item25.webp" alt="" class="f-image">
+                    <img src="Images/item25.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Wellington And Zendaya Dining Set</div>
+                <p>From £486.00 exc VAT &nbsp;<span> £540.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item26.webp" alt="" class="f-image">
+                    <img src="Images/item26.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Wellington And Zada Dining Set</div>
+                <p>From £414.00 exc VAT &nbsp;<span> £460.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item27.webp" alt="" class="f-image">
+                    <img src="Images/item27.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Alanna And Elle Dining Set</div>
+                <p>From £360.00 exc VAT &nbsp;<span> £400.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item28.webp" alt="" class="f-image">
+                    <img src="Images/item28.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Alanna And Tilly Dining Set</div>
+                <p>From £576.00 exc VAT &nbsp;<span> £640.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item29.webp" alt="" class="f-image">
+                    <img src="Images/item29.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Carmen And Zada Dining Set</div>
+                <p>From £369.00 exc VAT &nbsp;<span> £410.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item30.webp" alt="" class="f-image">
+                    <img src="Images/item30.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Perth And Elle Dining Set</div>
+                <p>From £319.50 exc VAT &nbsp;<span> £355.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item31.webp" alt="" class="f-image">
+                    <img src="Images/item31.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Perth And Penton Dining Set</div>
+                <p>From £355.50 exc VAT &nbsp;<span> £395.00</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="image-container">
+                <div class="image">
+                    <img src="Images/item32.webp" alt="" class="f-image">
+                    <img src="Images/item32.webp" alt="" class="f2-image">
+                </div>
+                <div class="top">
+                    <div class="sale">SALE</div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">Perth And Zendaya Dining Set</div>
+                <p>From £463.50 exc VAT &nbsp;<span> £515.00</span></p>
+            </div>
+        </div>   
+    </section>
+
+    <section class="paging">
+        <div class="left"><i class="fa-solid fa-arrow-left-long"></i></div>
+        <p>1</p>
+        <p>2</p>
+        <div class="right"><i class="fa-solid fa-arrow-right-long"></i></div>
+    </section>
+
+    <section class="containers">
+        <div class="service item">
+            <ul>
+                <p class="head">Our Services</p>
+                <li><a href="#">Student Accommodation</a></li>
+                <li><a href="#">Build To Rent Furniture</a></li>
+                <li><a href="#">Furniture Rental Service</a></li>
+                <li><a href="#">Project Enquiry</a></li>
+            </ul>
+        </div>
+        <div class="links item">
+            <ul>
+                <p class="head">Quick links</p>
+                <li><a href="#">Trade Account Application</a></li>
+                <li><a href="#">Assembly & Installation Service</a></li>
+                <li><a href="#">Removals</a></li>
+                <li><a href="#">FAQs</a></li> 
+                <li><a href="#">Contact Us</a></li> 
+                <li><a href="#">Refund policy</a></li> 
+                <li><a href="#">Wishlist</a></li>   
+                <li><a href="#">Terms of Service</a></li>   
+            </ul>
+        </div>
+        <div class="connect item">
+            <ul>
+                <p class="head item">Connect with us</p>
+                <li><a href="#">
+                    <img class="tribe" src="Images/tribe.png" alt="">
+                </a></li> <br>
+                <li><a href="#">
+                    <img class="stamp" src="Images/stamp.svg" alt="">
+                </a></li>
+                
+            </ul>
+        </div>
+        <div class="contact item">
+            <ul>
+                <p class="head item">Contact us</p>
+                <li><a href="#">orders@loft.co.uk</a></li>
+                <li><a href="#">0161 872 2363</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="pay2">
+            <img src="Images/pay2.png" alt="">
+        </div>
+        <div class="rights">
+            &copy; 2024 LOFT <br>Powered by Shopify
+        </div>
+        <div class="pay">
+            <img src="Images/pay.png" alt="">
+        </div>
+    </footer>
+</body>
+</html>
