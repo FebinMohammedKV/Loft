@@ -530,7 +530,7 @@
     color: rgb(77, 77, 77);
 }
 .material .image{
-    background-image: url(./Images/material.webp);
+    background-image: url(material.webp);
     background-size: cover;
     width: 570px;
     height: 390px;
@@ -539,7 +539,7 @@
     background-repeat: no-repeat; 
 }
 .material-container .images{
-    background-image: url(./Images/material.webp);
+    background-image: url(material.webp);
     background-size: cover;
     width: 570px;
     height: 390px;
