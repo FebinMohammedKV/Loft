@@ -1,9 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: Mont, sans-serif; */
 }
+
 .navigation{
     margin-top: 20px;
 }
@@ -63,12 +69,14 @@
 .main .right ul li .sub{
     display: none;
     position: absolute;
+    z-index: 3;
     top: 100%;
-    left: 0;
+    /* left: 0; */
     width: 220px;
     padding: 10px 10px 0 10px;
     box-shadow: 0 0 3px rgb(180, 180, 180);
-    background-color: white;
+    /* background-color: white; */
+    background-color: rgb(222, 53, 53);
 }
 .main .right ul li .sub button{
     width: 100%;
@@ -87,14 +95,15 @@
 
 .main .right ul li .sub p{
     padding: 3px 0;
-    font-size: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 .main .right ul li .sub .under a{
     text-decoration: underline;
     text-underline-offset: 4px;
     color: rgb(113, 113, 113);
     padding-top: 10px;
-    font-size: 15px;
+    font-size: 0.9rem;
 }
 .main .right ul li:hover .sub{
     display: block;
@@ -127,8 +136,9 @@
 }
 .chat p{
     color: white;
-    font-size: 25px;
+    font-size: 1.5rem;
     padding-top: 13px;
+    font-weight: 600;
 }
 
 
@@ -137,8 +147,9 @@
     width: 100%;
     justify-content: center;
     gap: 20px;
-    font-size: 12px;
-    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-weight: 450;
+    letter-spacing: 1px;
     margin: 20px auto;
 }
 
@@ -164,7 +175,9 @@
     border: none;
     width: 180px;
     padding: 20px;
-    font-size: 14px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0;
 }
 .menu ul li .submenu li{
     padding: 10px 0;
@@ -181,7 +194,9 @@
     color: rgb(167, 166, 166);
 }
 
-
+.header{
+    width: 100%;
+}
 
 .header .top{
     display: flex;
@@ -247,25 +262,33 @@
 }
 .reviews .poster{
     background-color: #879056;
-    width: 280px;
+    /* width: 280px; */
+    width: 100%;
     height: 240px;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    line-height: 25px;
-    flex-basis: 20%;
+    flex-basis: 18%;
 }
 .reviews .poster h3{
-    font-size: large;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 .reviews .poster .ratingstar{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.reviews .poster > p{
+    margin-top: 0.7rem;
+    font-weight: 300;
+    font-size: 0.9rem;
 }
 .reviews .poster .ratingstar p span{
-    font-size: 20px;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 .reviews .poster .ratingstar .starbtn{
     border: none;
@@ -276,12 +299,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 0.3rem;
     background-image: radial-gradient(circle, red, yellow, green);
+}
+.reviews .poster .ratingstar p{
+    font-size: 0.6rem;
 }
 .reviews .poster .ratingstar .starbtn svg{
     position: absolute;
     background-color: #879056;
-    margin: 0;
 }
 
 .wiper-track {
@@ -291,14 +317,17 @@
   margin: 0 auto;
   transition: transform 0.4s ease-in;
   padding: 0.7rem 0.7rem;
-  width: 1130px;
+  /* width: 1130px; */
+  width: 100%;
   height: 240px;
 }
 .wiper-track li{
     list-style: none;
+    width: 100%;
 }
 .wiper-track .wiper-item {
-  min-width: 540px;
+  width: 540px;
+  /* max-width: 100%; */
   height: 240px;
   position: relative;
   transition: scale 0.2s linear;
@@ -311,13 +340,15 @@
   object-fit:cover;
 }
 .wiper {
-  width: 1210px;
+  /* width: 1210px; */
+  max-width: 100%;
   position: relative;
   margin: 0 auto;
   overflow: hidden;
   height: 270px;
   display: flex;
   align-items: center;
+  flex-basis: 88%;
 }
 .wiper-button {
   margin: 0 1rem;
@@ -347,7 +378,8 @@
   cursor: pointer;
 }
 .wiper-wrapper {
-  max-width: 1130px;
+  /* max-width: 1130px; */
+  max-width: 100%;
   overflow: hidden;
   padding: 0rem 0rem;
   margin: 0 auto;
@@ -385,14 +417,16 @@
     height: 30px;
 }
 .wiper-item .second p{
-    font-size: 13px;
+    font-size: 0.7rem;
     padding-top: 15px;
+    font-weight: 500;
 }
 .wiper-item .cont{
     line-height: 20px;
     font-size: 14px;
     padding-top: 5px;
     color: #474646;
+    font-weight: 500;
 }
 .wiper-item .footer{
     position: absolute;
@@ -402,8 +436,10 @@
     padding-bottom: 20px;
     font-size: 11px;
     letter-spacing: 1px;
-    color: #474646;
+    color: hsl(0, 0%, 18%);
 }
+
+
 .reviews .review{
     display: none;
 }
@@ -476,16 +512,18 @@
     margin: 70px auto;
 }
 .about .cont h1{
-    font-size: 35px;
-    font-weight: lighter;
+    font-size: 2.2rem;
+    /* font-weight: ; */
     text-transform: uppercase;
     letter-spacing: 4px;
+    color: #343434;
 }
 
 .about .cont p{
     font-size: 15px;
-    color: #5C5C5C;
+    color: #292828;
     line-height: 25px;
+    font-weight: 400;
 }
 
 .material{
@@ -505,17 +543,19 @@
     gap: 20px;
 }
 .material .cont h1{
-    font-size: 35px;
+    font-size: 2.1rem;
+    font-weight: 700;
     text-transform: uppercase;
 }
 .material .cont h3{
-    font-weight: normal;
-    font-size: 17px;
+    font-weight: 500;
+    font-size: 1.1rem;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 .material .cont p{
-    font-size: 14px;
+    font-size: 0.84rem;
+    font-weight: 500;
 }
 .material .cont button{
     width: 150px;
@@ -523,7 +563,8 @@
     background-color: transparent;
     border: 2px solid white;
     color: white;
-    font-size: 14px;
+    font-size: 0.85rem;
+    font-weight: 500;
 }
 .material .cont button:hover{
     transition-duration: 240ms;
@@ -568,9 +609,11 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    font-weight: 500;
 }
 .sign .container .desc .cont{
     color: rgb(89, 89, 89);
+    font-size: 0.9rem;
 }
 .sign .container .embn{
     display: flex;
@@ -582,7 +625,7 @@
     width: 190px;
     height: 52px;
     padding-left: 15px;
-    font-size: medium;
+    font-size: 0.9rem;
     border: none;
 }
 .sign .container .embn button{
@@ -635,7 +678,7 @@
 }
 .main-grid .left p{
     font-size: x-large;
-    font-weight: lighter;
+    font-weight: 500;
     color: rgb(48,48,48);
 }
 .main-grid .left button{
@@ -643,7 +686,8 @@
     height: 60px;
     background-color: rgb(48,48,48);
     color: white;
-    font-size: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
     letter-spacing: 1px;
     position: absolute;
     right: 0;
@@ -694,18 +738,21 @@
     word-spacing: 5px;
     letter-spacing: 1px;
     line-height: 20px;
-    font-size: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 .grid-items .head{
-    color: rgb(48,48,48);
+    color: rgb(67, 66, 66);
     letter-spacing: 2px;
-    font-size: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
     padding-top: 30px;
 }
 .grid-items .price{
     padding-top: 10px;
-    color: rgb(127,127,127);
-    font-size: 14px;
+    color: rgb(96, 95, 95);
+    font-size: 0.85rem;
+    font-weight: 500;
 }
 
 
@@ -722,12 +769,14 @@
 }
 .loft .head{
     text-align: center;
-    font-size: 20px;
-    color: rgb(48,48,48);
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgb(68, 68, 68);
 }
 .loft .grid-pro{
     display: grid;
-    width: 1180px;
+    /* width: 1180px; */
+    width: 100%;
     height: auto;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
@@ -748,13 +797,13 @@
     gap: 7px;
 }
 .loft .grid-pro .cont .head{
-    font-size: 15px;
+    font-size: 0.9rem;
     letter-spacing: 3px;
     color: rgb(65, 65, 65);
 }
 .loft .grid-pro .cont .content{
-    font-size: 14px;
-    letter-spacing: 1px;
+    font-size: 0.85rem;
+    font-weight: 500;
     color: rgb(69, 68, 68);
 }
 .loft .grid-pro .cont button{
@@ -762,8 +811,8 @@
     height: 60px;
     background-color: rgb(48,48,48);
     color: white;
-    font-size: 15px;
-    letter-spacing: 1px;
+    font-size: 0.9rem;
+    font-weight: 500;
     border: none;
 }
 .loft .grid-pro .cont button:hover{
@@ -772,12 +821,12 @@
 
 
 .shop{
-    /* width: 1190px; */
-    width: 100%;
+    width: 1190px;
+    /* width: 100%; */
     margin: 100px auto;
     display: flex;
     gap: 40px;
-    padding: 0 10.5rem;
+    /* padding: 0 10.5rem; */
 }
 .shop img{
     width: 590px;
@@ -789,15 +838,18 @@
 }
 .shop .cont .top{
     color: rgb(69, 68, 68);
-    font-size: 14px
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 .shop .cont .head{
-    font-size: 35px;
+    font-size: 2.2rem;
+    font-weight: 500;
     text-align: center;
 }
 .shop .cont .para{
-    font-size: 14px;
-    letter-spacing: 1px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    /* letter-spacing: 1px; */
     color: rgb(69, 68, 68);
 }
 .shop .cont button{
@@ -806,8 +858,8 @@
     background-color: rgb(48,48,48);
     border: none;
     color: white;
-    font-size: 15px;
-    letter-spacing: 1px;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 .shop .cont button:hover{
     background-color: rgb(96, 95, 95);
@@ -833,18 +885,20 @@
 }
 .info .head{
     color: rgb(58, 58, 58);
-    letter-spacing: 3px;
-    word-spacing: 3px;
-    font-size: 15px;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: 500;
 }
 .info .post{
-    font-size: 14px;
+    font-size: 0.9rem;
+    font-weight: 500;
     color: rgb(102, 102, 102);
 }
 .info .cont{
     padding-right: 30px;
-    font-size: 15px;
-    color: rgb(97, 96, 96);
+    font-size: 0.92rem;
+    color: rgb(75, 74, 74);
+    font-weight: 500;
 }
 
 .containers{
@@ -866,15 +920,17 @@
     text-align: center;
 }
 .containers .item .head{
-    font-size: 22px;
+    font-size: 1.4rem;
+    font-weight: 500;
 }
 .containers .item li{
     list-style: none;
 }
 .containers .item li a{
     text-decoration: none;
-    font-size: 15px;
-    color: rgb(109, 109, 109);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgb(121, 121, 121);
 }
 .containers .item li a .tribe{
     /* width: 200px; */
@@ -904,8 +960,9 @@ footer .rights{
     flex-basis: 50%;
     display: flex;
     align-items: center;
-    font-size: 10px;
-    color: rgb(94, 94, 94);
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: rgb(72, 72, 72);
     letter-spacing: 1px;
 }
 footer .pay{
@@ -981,7 +1038,17 @@ footer .pay img2{
     .menu ul .plus{
         display: none;
     }
-
+    
+    .header .top .cont{
+        width: 100%;
+        overflow: hidden;
+    }
+    .header .top .cont a{
+        overflow: hidden;
+    }
+    .top .protect a{
+        padding-top: 0;
+    }
     .header .top .cont .pro2{
         display: none;
     }
@@ -992,6 +1059,8 @@ footer .pay img2{
         background-size: contain;
         height: 50vh;
         width: 100%;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
     .bottom button{
         margin-top: 10px;
@@ -1006,18 +1075,21 @@ footer .pay img2{
         flex-basis: 28%;
     }
     .wiper{
-        /* margin: 0;
-        flex-basis: 70%; */
+        display: none;
+    }
+    /* .wiper{
+        margin: 0;
+        flex-basis: 70%;
         display: none;
     }
     .wiper-track{
-        /* width: 600px; */
+        width: 600px;
         width: 100%;
         height: 260px;
         overflow: hidden;
     }
     .wiper-wrapper{
-        /* width: 630px; */
+        width: 630px;
         width: 100%;
     }
     .grid-items .image-container{
@@ -1032,15 +1104,40 @@ footer .pay img2{
     .wiper-item .second{
         overflow: hidden;
     }
+    .review .slick-carousal .slick-item .second p{
+        padding-top: 1rem;
+    }
     .wiper-button{
         width: 30px;
         height: 25px;
         overflow: hidden;
-    }
+    } */
 
     .reviews .review{
         display: block;
+        flex-basis: 72%;
+        position: relative;
     }
+    .review .slick-carousal .slick-item .top span{
+        font-weight: 600;
+    }
+    .slick-carousal .slick-item .second p{
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+    .review .slick-carousal .slick-item .cont{
+        font-size: 1rem;
+        font-weight: 500;
+        color: #333333;
+    }
+    .review .slick-carousal .slick-item .footer{
+        font-weight: 500;
+        margin-top: 1rem;
+        /* position: absolute;
+        bottom: 0;
+        right: ; */
+    }
+
 
     .about .cont{
         margin: 30px auto;
@@ -1056,6 +1153,9 @@ footer .pay img2{
         width: 430px;
         gap: 15px;
         margin: 0;
+    }
+    .material .cont h1{
+        overflow: hidden;
     }
     .material .cont button{
         width: 190px;
@@ -1175,6 +1275,9 @@ footer .pay img2{
         color: rgb(144, 143, 143);
         /* overflow-y: hidden; */
     }
+    .navigation .main .right .wishlist .sub{
+        display: none;
+    }
     .menu {
         height: 100%;
         width: 100%;
@@ -1227,7 +1330,8 @@ footer .pay img2{
         display: none;
     }
     .menu li .submenu{
-        display: none;
+        display: block;
+        left: -400px;
     }
     .menu a {
       padding: 0.6rem 1rem;
@@ -1294,6 +1398,10 @@ footer .pay img2{
         text-decoration: none;
         color: black;
         font-size: 0.9rem;
+        font-weight: 500;
+    }
+    .header .collections-slider .content a span{
+        font-weight: bold;
     }
     .slick-track{
         width: 200px;
@@ -1320,16 +1428,18 @@ footer .pay img2{
         height: 3rem;
         font-weight: bold;
     }
+
     .reviews{
         flex-direction: column;
-        gap: 2rem;
+        /* gap: 1.5rem; */
         margin-top: 3rem;
     }
     .reviews .poster{
-        width: 19rem;
+        width: 20rem;
         height: 25rem;
         justify-content: center;
         padding-top: 2rem;
+        margin: 0;
     }
     .reviews .poster h3{
         font-weight: bolder;
@@ -1341,6 +1451,11 @@ footer .pay img2{
 
     .reviews .review{
         display: block;
+        font-weight: 500;
+        padding: 0 2.9rem;
+    }
+    .review .slick-carousal .slick-item .top span{
+        font-weight: bold;
     }
     .review .slick-carousal .slick-item .second{
         gap: 0.4rem;
@@ -1348,10 +1463,18 @@ footer .pay img2{
     .review .slick-carousal .slick-item .second p{
         padding-top: 1rem;
     }
+    .review .slick-carousal .slick-item{
+        padding: 0.5rem;
+        padding-top: 1.2rem;
+    }
     .review .slick-carousal .slick-item .cont{
         color: #343434;
+        font-size: 0.8rem;
     }
-
+    .review .slick-carousal .slick-item .footer {
+        margin-top: 3rem;
+        font-size: 0.7rem;
+    }
     .wiper{
         display: none;
         margin: 0 0rem;
@@ -1359,13 +1482,16 @@ footer .pay img2{
     }
     .wiper-wrapper{
         width: 100%;
+        
     }
     .wiper-track{
         width: 100%;
+        
     }
     .wiper-track .wiper-item{
-        width: 10rem;
+        width: 10rem;   
     }
+
     .about{
         width: 100%;
         text-align: center;
@@ -1378,12 +1504,17 @@ footer .pay img2{
     }
     .about .cont h1{
         padding: 0 3rem;
+        overflow: hidden;
     }
     .about .cont p{
-        font-size: 17px;
+        font-size: 0.95rem;
+        font-weight: 500;
         display: flex;
         flex-direction: column;
+        color: #464646;
     }
+
+
     .material{
         width: 100%;
         height: auto;
@@ -1397,13 +1528,17 @@ footer .pay img2{
         align-items: center;
         justify-content: center;
         height: auto;
+        position: relative;
     }
     .material-container .images{
+        background-image: url(material.webp);
+        display: block;
         position: absolute;
         top: 0;
+        width: 100%;
+        background-size: cover;
         width: 85%;
-        height: 33%;
-        margin: 0 auto;
+        height: 30%;
     }
     .material .cont{
         height: auto;
@@ -1427,8 +1562,8 @@ footer .pay img2{
     .sign{
         width: 100%;
         margin: 40px auto;
-        height: 14rem;
-        padding: 10px;
+        height: 15rem;
+        padding: 1rem 1.5rem;
     }
     .sign .container{
         width: 100%;
@@ -1447,15 +1582,18 @@ footer .pay img2{
         text-align: center;
     }
     .sign .container .desc .head{
-       font-size: 18px;
+       font-size: 1rem;
     }
     .sign .container .desc .cont{
-        font-size: 18px;
+        font-size: 1rem;
     }
     .sign .container .embn{
         width: 100%;
         height: 6rem;
     } 
+    .sign .container .embn input{
+        border: 1px solid rgb(180, 178, 178);
+    }
 
     .grid-products-small{
         width: 100%;
@@ -1464,7 +1602,7 @@ footer .pay img2{
     }
     .grid-products-small .main-grid{
         flex-direction: column;
-        margin-left: 1.3rem;
+        /* margin-left: 1.3rem; */
     }
     .grid-products-small .main-grid .left button{
         display: none;
@@ -1541,7 +1679,7 @@ footer .pay img2{
     }
     .info .cont{
         font-size: 1rem;
-        color: rgb(104, 103, 103);
+        color: rgb(87, 86, 86);
         letter-spacing: 0.1rem;
     }
     
@@ -1564,7 +1702,8 @@ footer .pay img2{
     }
     .containers .connect ul .head{
         text-align: center;
-        padding-left: 2.5rem;
+        /* padding-left: 1rem; */
+        /* width: 20rem; */
     }
     .containers .contact ul .head{
         text-align: center;
@@ -1589,6 +1728,8 @@ footer .pay img2{
         height: 10rem;
         margin: 0;
         gap: 0;
+        width: 100%;
+        padding: 0 3rem;
     }
     footer .pay{
         display: none;
@@ -1603,6 +1744,7 @@ footer .pay img2{
     }
     footer .rights{
         text-align: center;
+       padding: 0;
     }
 
     .chat p{
