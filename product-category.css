@@ -488,6 +488,15 @@ footer .pay2{
 footer .pay img2{
     width: 480px;
 }
+.footer2{
+    display: none;
+}
+.sub-account{
+    display: none;
+}
+.sub-search{
+    display: none;
+}
 
 @media only screen and (max-width: 1024px){
     *{
@@ -613,6 +622,15 @@ footer .pay img2{
         padding-right: 2.5rem;
         display: flex;
         justify-content: space-evenly;
+    }
+    .footer2{
+        display: none;
+    }
+    .sub-account{
+        display: none;
+    }
+    .sub-search{
+        display: none;
     }
 }
 
