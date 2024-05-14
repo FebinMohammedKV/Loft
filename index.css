@@ -75,8 +75,8 @@
     width: 220px;
     padding: 10px 10px 0 10px;
     box-shadow: 0 0 3px rgb(180, 180, 180);
-    /* background-color: white; */
-    background-color: rgb(222, 53, 53);
+    background-color: white;
+    /* background-color: rgb(222, 53, 53); */
 }
 .main .right ul li .sub button{
     width: 100%;
