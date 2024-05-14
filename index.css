@@ -316,17 +316,19 @@
   column-gap: 1.5rem;
   margin: 0 auto;
   transition: transform 0.4s ease-in;
-  padding: 0.7rem 0.7rem;
+  /* padding: 0.7rem 0.7rem; */
   /* width: 1130px; */
   width: 100%;
   height: 240px;
+  margin-right: 3rem;
 }
 .wiper-track li{
     list-style: none;
     width: 100%;
 }
 .wiper-track .wiper-item {
-  width: 540px;
+  /* width: 640px; */
+  width: 36rem;
   /* max-width: 100%; */
   height: 240px;
   position: relative;
@@ -349,6 +351,7 @@
   display: flex;
   align-items: center;
   flex-basis: 88%;
+  padding-right: 0.5rem;
 }
 .wiper-button {
   margin: 0 1rem;
@@ -379,11 +382,15 @@
 }
 .wiper-wrapper {
   /* max-width: 1130px; */
-  max-width: 100%;
+  max-width: 95%;
   overflow: hidden;
   padding: 0rem 0rem;
   margin: 0 auto;
   height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2.3rem;
 }
 .swiper__image-button {
   right: 50%;
@@ -1019,6 +1026,8 @@ footer .pay img2{
         padding-top: 20px;
         padding-left: 50px;
     }
+
+
     .chat p{
         display: none;
     }
@@ -1037,6 +1046,34 @@ footer .pay img2{
     }
     .menu ul .plus{
         display: none;
+    }
+
+    .menu{
+        position: relative;
+    }
+
+    .menu ul li .submenu{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        color: rgb(69, 69, 69);
+        border: none;
+        width: 180px;
+        padding: 20px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        letter-spacing: 0;
+        z-index: 2;
+    }
+    .menu ul li .submenu li{
+        padding: 10px 0;
+    }
+    
+    .menu ul li:hover .submenu {
+        display: block;
+        
     }
     
     .header .top .cont{
